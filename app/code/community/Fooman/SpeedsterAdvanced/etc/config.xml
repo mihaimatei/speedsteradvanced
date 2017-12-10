@@ -66,6 +66,7 @@
         <dev>
             <js>
                 <speedster_minify_blacklist>js/mage/adminhtml/sales/packaging.js</speedster_minify_blacklist>
+                <defer>0</defer>
             </js>
             <css>
                 <speedster_minify_blacklist></speedster_minify_blacklist>

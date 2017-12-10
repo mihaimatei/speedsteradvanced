@@ -16,6 +16,21 @@ class Fooman_SpeedsterAdvanced_Model_Observer
                 $response->setBody($html);
             }
         }
+
+        if (Mage::getStoreConfigFlag('dev/js/defer')) {
+            /** @var Mage_Core_Controller_Response_Http $response */
+            $response = $observer->getData('response');
+            $html     = $response->getBody();
+
+            if (stripos($html, "</body>") === false) return;
+            preg_match_all('~<\s*\bscript\b[^>]*>(.*?)<\s*\/\s*script\s*>~is', $html, $scripts);
+            if ($scripts and isset($scripts[0]) and $scripts[0]) {
+                $html = preg_replace('~<\s*\bscript\b[^>]*>(.*?)<\s*\/\s*script\s*>~is', '', $response->getBody());
+                $scripts = implode("", $scripts[0]);
+                $html = str_ireplace("</body>", "$scripts</body>", $html);
+                $response->setBody($html);
+            }
+        }
     }
 
 }
