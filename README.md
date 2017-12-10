@@ -35,4 +35,4 @@ Please note that packages.firegento.com is not always up-to-date - in this case 
 * MXPERTS JQUERY BASE - a workaround is provided in the instructions
 
 ### Alternatives ###
-You can also just use Fooman Speedster Advanced + FBalliano Magento Defer Javascripts from here: https://github.com/fballiano/magento-defer-javascripts
+You can also just use Fooman Speedster Advanced + FBalliano Magento Defer Javascripts from here: https://github.com/fballiano/magento-defer-javascripts , but there's no option to disable JS defer in config backend. 
