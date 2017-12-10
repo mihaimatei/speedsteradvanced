@@ -1,5 +1,5 @@
-Fooman Speedster Advanced
-===================
+Fooman Speedster Advanced + Defer JS
+====================================
 
 ### Installation Instructions
 To install the extension, follow the steps in our [Installation Guide](http://magento1-support.fooman.co.nz/category/939-install-set-up-user-manual).
@@ -33,3 +33,6 @@ Please note that packages.firegento.com is not always up-to-date - in this case 
 ### Known conflicts with Fooman Speedster Advanced###
 * CANONICAL URLs by Yoast - a workaround is provided in the instructions
 * MXPERTS JQUERY BASE - a workaround is provided in the instructions
+
+### Alternatives ###
+You can also just use Fooman Speedster Advanced + FBalliano Magento Defer Javascripts from here: https://github.com/fballiano/magento-defer-javascripts
